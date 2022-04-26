@@ -17067,7 +17067,7 @@ select.tt-hint {
       outline: 1px solid #0d0d0d; }
 
 .form-group label {
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
   line-height: 1;
   vertical-align: top; }
 
@@ -21137,3 +21137,21 @@ div.tagsinput {
   font-size: 25px;
 }
 
+/* profile */
+.pro-button{
+  padding-top: 15px;
+}
+
+.pic-button{
+  padding-top: 23.5px;
+}
+
+.cancel-button{
+  position: absolute;
+  padding: 0 0 0px 90px;
+  bottom: 27.5px;
+}
+
+.submit-button{
+  padding-left: 0px;
+}
