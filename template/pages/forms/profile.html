@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
+    
     <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- End Plugin css for this page -->
+
     <!-- inject:css -->
     <!-- endinject -->
+
     <!-- Layout styles -->
     <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
@@ -39,43 +44,10 @@
                   <span>Manager</span>
                 </div>
               </div>
-              <!-- <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
-              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-settings text-primary"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-onepassword  text-info"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-calendar-today text-success"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
-                  </div>
-                </a>
-              </div> -->
             </div>
           </li>
+
+          <!-- Task -->
           <li class="nav-item nav-category">
             <span class="nav-link">Task</span>
           </li>
@@ -104,19 +76,25 @@
         <!-- partial:../../partials/_navbar.html -->
         <nav class="navbar p-0 fixed-top d-flex flex-row">
           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini-a.svg" alt="logo" /></a>
           </div>
           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
               <span class="mdi mdi-menu"></span>
             </button>
-            <ul class="navbar-nav w-100">
-              <li class="nav-item w-100">
-                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                  <input type="text" class="form-control" placeholder="Search products">
-                </form>
+
+            <ul class="navbar-nav col-md-6">
+              <li class="nav-item text-white clock-num">
+                <h3 class="card-title text-center clock-text">
+                  <div class="mt-2 d-flex flex-wrap justify-content-center">
+                  <a><span class="badge hours"></span></a> :
+                  <a><span class="badge min"></span></a> :
+                  <a><span class="badge sec"></span></a>
+                  </div>
+                </h3>
               </li>
             </ul>
+
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item dropdown d-none d-lg-block">
                 <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" href="../forms/post.html">+ Create New Project</a>
@@ -170,18 +148,19 @@
     <div class="col-md-3 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
-            <div class="card-title">Profile Image</div>
-            <div class="card-subtitle mb-4">This image will be publicly visible to other users.</div>
-            <div class="text-center">
+            <div class="card-title">
+              <h4 class="card-title mb-1">Profile Image</h4>
+            </div>
+            <div class="text-center img-upload">
                 <!-- Profile picture image-->
-                <img class="img-fluid rounded-circle mb-1" src="../../assets/images/faces/face25.jpg" alt="..." style="max-width: 150px; max-height: 150px">
-                <!-- Profile picture help block-->
-                <div class="caption fst-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
+                <img class="img-fluid rounded-circle mb-1" src="../../assets/images/faces/face25.jpg" alt="..." style="max-width: 115px; max-height: 150px">
                 <!-- Profile picture upload button-->
-                <button class="btn btn-primary mdc-ripple-upgraded" type="button" style="--mdc-ripple-fg-size:125px; --mdc-ripple-fg-scale:1.77896; --mdc-ripple-fg-translate-start:134.156px, -47.5px; --mdc-ripple-fg-translate-end:42.1484px, -44.5px;">
-                    Upload new image
-                    <i class="material-icons trailing-icon">upload</i>
-                </button>
+                <div class="img-button">
+                  <a href="">
+                    <button class="btn btn-primary" type="button">Upload new image
+                  </button>
+                  </a>
+                </div>
             </div>
         </div>
       </div>
@@ -191,7 +170,7 @@
       <div class="card">
         <div class="card-body">
           <div class="flex-row justify-content-between">
-            <h4 class="card-title mb-1">Open Projects</h4>
+            <h4 class="card-title mb-1">Profile</h4>
 
             <!-- form1 -->
             <form class="row g-3">
@@ -217,49 +196,18 @@
               </div>
               <div class="pro-button col-md-6">
                 <label for="inputDateofBirth" class="form-label">Date of Birth</label>
+                <div class="col-md-6">
+                </div>
                 <input type="text" class="form-control" id="inputDateofBirth" placeholder="Date of Birth">
               </div>
               <div class="col-12 pro-button">
                 <button type="submit" class="btn btn-primary">Sign in</button>
               </div>
             </form>
-            
-            <!-- form2 -->
-            <!-- <form class="forms-sample">
-              <div class="form-group">
-                <input type="hidden" id="custId" name="status" value="pending">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputName1">Categories</label>
-                <input type="text" class="form-control" id="exampleInputName1" placeholder="Categories">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail3">Title</label>
-                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Title">
-              </div>
-              <div class="form-group">
-                <label>Picture</label>
-                <input type="file" name="img[]" class="file-upload-default">
-                <div class="input-group col-xs-12">
-                  <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload picture">
-                  <span class="input-group-append">
-                    <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                  </span>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="exampleTextarea1">Enter text</label>
-                <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary mr-2">Submit</button>
-              <button class="btn btn-dark">Cancel</button>
-            </form> -->
-
           </div>
         </div>
       </div>
     </div>
-
   </div>
 
   </div>
@@ -291,6 +239,22 @@
     <script src="../../assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
+    <script>
+      $(document).ready(function() {
+      setInterval( function() {
+      var hours = new Date().getHours();
+      $(".hours").html(( hours < 10 ? "0" : "" ) + hours);
+      }, 1000);
+      setInterval( function() {
+      var minutes = new Date().getMinutes();
+      $(".min").html(( minutes < 10 ? "0" : "" ) + minutes);
+      },1000);
+      setInterval( function() {
+      var seconds = new Date().getSeconds();
+      $(".sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+      },1000);
+      });
+      </script>
     <!-- End custom js for this page -->
   </body>
 </html>

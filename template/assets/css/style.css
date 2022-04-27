@@ -15991,7 +15991,7 @@ code {
 /* Badges */
 .badge {
   border-radius: 0.25rem;
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
   font-weight: initial;
   line-height: 1;
   padding: 0.5rem 0.7rem;
@@ -21154,4 +21154,38 @@ div.tagsinput {
 
 .submit-button{
   padding-left: 0px;
+}
+
+.img-fluid{
+  height: auto;
+}
+
+.rounded-circle{
+  border-radius: 50% !important;
+}
+
+.img-button{
+  padding-top: 20px;
+}
+
+.img-upload{
+  padding-top: 50px;
+}
+
+.clock-text{
+  border: none;
+  font-size: 2rem ;
+}
+
+.clock-num{
+  margin-top: -0.2rem;
+}
+
+.pagination{
+  padding-left: 2rem;
+}
+
+.page-link{
+  color: #ffffff;
+  background-color: #212529;
 }
