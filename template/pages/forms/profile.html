@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Profile</title>
+    <title>Trang cá nhân</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -40,8 +40,8 @@
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Le Hoang Son</h5>
-                  <span>Manager</span>
+                  <h5 class="mb-0 font-weight-normal">Lê Hoàng Sơn</h5>
+                  <span>Tổng biên tập</span>
                 </div>
               </div>
             </div>
@@ -56,7 +56,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
-              <span class="menu-title">Posts</span>
+              <span class="menu-title">Bài viết</span>
             </a>
           </li>
           </li>
@@ -65,7 +65,15 @@
               <span class="menu-icon">
                 <i class="mdi mdi-account"></i>
               </span>
-              <span class="menu-title">User</span>
+              <span class="menu-title">Thành viên</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../category/category.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Danh mục</span>
             </a>
           </li>
         </ul>
@@ -96,39 +104,36 @@
             </ul>
 
             <ul class="navbar-nav navbar-nav-right">
-              <li class="nav-item dropdown d-none d-lg-block">
-                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" href="../forms/post.html">+ Create New Project</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                   <div class="navbar-profile">
                     <img class="img-xs rounded-circle" src="../../assets/images/faces/face25.jpg" alt="">
-                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Le Hoang Son</p>
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Lê Hoàng Sơn</p>
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                  <h6 class="p-3 mb-0">Profile</h6>
+                  <h6 class="p-3 mb-0">Trang cá nhân</h6>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
+                  <a class="dropdown-item preview-item" href="profile.html">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-settings text-success"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="preview-subject mb-1">Cài đặt</p>
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
+                  <a class="dropdown-item preview-item" href="../Login/login.html">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Log out</p>
+                      <p class="preview-subject mb-1">Đăng xuất</p>
                     </div>
                   </a>
                 </div>
@@ -149,7 +154,7 @@
       <div class="card">
         <div class="card-body">
             <div class="card-title">
-              <h4 class="card-title mb-1">Profile Image</h4>
+              <h4 class="card-title mb-1">Ảnh cá nhân</h4>
             </div>
             <div class="text-center img-upload">
                 <!-- Profile picture image-->
@@ -157,8 +162,7 @@
                 <!-- Profile picture upload button-->
                 <div class="img-button">
                   <a href="">
-                    <button class="btn btn-primary" type="button">Upload new image
-                  </button>
+                    <button class="btn btn-primary" type="button"> Tải ảnh lên </button>
                   </a>
                 </div>
             </div>
@@ -170,16 +174,16 @@
       <div class="card">
         <div class="card-body">
           <div class="flex-row justify-content-between">
-            <h4 class="card-title mb-1">Profile</h4>
+            <h4 class="card-title mb-1">Thông tin</h4>
 
             <!-- form1 -->
             <form class="row g-3">
               <div class="pro-button col-md-6">
-                <label for="inputFirstName4" class="form-label">First Name</label>
+                <label for="inputFirstName4" class="form-label">Tên</label>
                 <input type="email" class="form-control" id="inputFirstName4" placeholder="First Name">
               </div>
               <div class="pro-button col-md-6">
-                <label for="inputLastName4" class="form-label">Last Name</label>
+                <label for="inputLastName4" class="form-label">Họ</label>
                 <input type="password" class="form-control" id="inputLastName4" placeholder="Last Name">
               </div>
               <div class="pro-button col-12">
@@ -187,21 +191,21 @@
                 <input type="text" class="form-control" id="inputEmail" placeholder="Email">
               </div>
               <div class="pro-button col-12">
-                <label for="inputAddress" class="form-label">Address</label>
+                <label for="inputAddress" class="form-label">Địa chỉ</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="Address">
               </div>
               <div class="pro-button col-md-6">
-                <label for="inputPhoneNumber" class="form-label">Phone Number</label>
+                <label for="inputPhoneNumber" class="form-label">Số điện thoại</label>
                 <input type="text" class="form-control" id="inputPhoneNumber" placeholder="PhoneNumber">
               </div>
               <div class="pro-button col-md-6">
-                <label for="inputDateofBirth" class="form-label">Date of Birth</label>
+                <label for="inputDateofBirth" class="form-label">Ngày sinh</label>
                 <div class="col-md-6">
                 </div>
                 <input type="text" class="form-control" id="inputDateofBirth" placeholder="Date of Birth">
               </div>
               <div class="col-12 pro-button">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary">Lưu</button>
               </div>
             </form>
           </div>
@@ -212,13 +216,6 @@
 
   </div>
   <!-- content-wrapper ends -->
-  <!-- partial:partials/_footer.html -->
-  <!-- <footer class="footer">
-    <div class="d-sm-flex justify-content-center justify-content-sm-between">
-      <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-      <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
-    </div>
-  </footer> -->
   <!-- partial -->
 </div>
         <!-- main-panel ends -->

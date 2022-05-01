@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Thêm bài viết</title>
+    <title>Xem trước bài viết</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -60,7 +60,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" href="../user/User.html">
               <span class="menu-icon">
-                <i class="mdi mdi-account"></i>
+                <i class="mdi mdi-playlist-play"></i>
               </span>
               <span class="menu-title">Thành viên</span>
             </a>
@@ -102,44 +102,43 @@
             </ul>
 
             <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                   <div class="navbar-profile">
                     <img class="img-xs rounded-circle" src="../../assets/images/faces/face25.jpg" alt="">
-                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Lê Hoàng Sơn</p>
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Le Hoang Son</p>
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                  <h6 class="p-3 mb-0">Trang cá nhân</h6>
+                  <h6 class="p-3 mb-0">Profile</h6>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item" href="../forms/profile.html">
+                  <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-settings text-success"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Cài đặt</p>
+                      <p class="preview-subject mb-1">Settings</p>
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item" href="../Login/login.html">
+                  <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Đăng xuất</p>
+                      <p class="preview-subject mb-1">Log out</p>
                     </div>
                   </a>
-                </div>
               </li>
             </ul>
-            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-              <span class="mdi mdi-format-line-spacing"></span>
-            </button>
           </div>
         </nav>
 
@@ -148,64 +147,90 @@
   <div class="content-wrapper">
     <div class="card">
       <div class="card-body">
-        <div class="flex-row justify-content-between">
-          
-          <!-- button new post -->
-          <div class="card-title nav-item dropdown d-flex justify-content-between">
-            <h4> Bài viết mới </h4>
-            <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" href="../forms/post.html">+ Tạo bài viết mới</a>
-          </div>
 
-          <!-- form1 -->
-          <form class="row g-3">
-            <input type="hidden" id="custId" name="status" value="pending">
-            <div class="pro-button col-md-6">
-              <label for="inputTitle" class="form-label">Tiêu đề</label>
-              <input type="email" class="form-control" id="inputTitle" placeholder="Title">
-            </div>
-            <div class="pro-button col-md-6">
-              <label for="inputDescription" class="form-label">Mô tả</label>
-              <input type="text" class="form-control" id="inputDescription" placeholder="Description">
-            </div>
-            <div class="pro-button col-md-6">
-              <label for="exampleSelectCategories">Danh mục</label>
-              <select class="form-control" id="exampleSelectCategories">
-                <option>Category1</option>
-                <option>Category2</option>
-                <option>Category3</option>
-                <option>Category4</option>
-              </select>
-            </div>
-            <div class="pro-button pic-button col-md-6 form-group">
-              <label for="inputEmail" class="form-label">Ảnh</label>
-              <input type="file" name="img[]" class="file-upload-default">
-              <div class="input-group col-xs-12">
-                <input type="text" class="form-control file-upload-info" disabled placeholder="Tải ảnh lên">
-                <span class="input-group-append">
-                  <button class="file-upload-browse btn btn-primary" type="button">Tải lên</button>
-                </span>
+        <!-- <div class="container mt-5"> -->
+          <div class="row">
+              <div class="col-lg-6">
+                  <!-- Post content-->
+                  <article>
+
+                      <!-- Post header-->
+                      <header class="mb-4">
+                          <!-- Post title-->
+                          <h1 class="fw-bolder mb-1">Thông tin covid
+                          </h1>
+                          <!-- Post meta content-->
+                          <div class="text-muted fst-italic mb-2"> January 1, 2022 </div>
+                          <!-- Post categories-->
+                      </header>
+
+                      <!-- Preview image figure-->
+                      <figure class="mb-4"><img class="img-fluid rounded" src="https://wallpaperaccess.com/full/2029165.jpg" alt="..." /></figure>
+
+                      <!-- Post content-->
+                      <section class="mb-5">
+                          <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
+                          <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                          <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                          <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
+                          <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
+                          <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
+                      </section>
+                  </article>
               </div>
-            </div>
-            <div class="pro-button col-12">
-              <label for="exampleTextarea1">Nội dung</label>
-              <textarea spellcheck="false" class="form-control" id="exampleTextarea1" rows="4"> </textarea>
-            </div>
-          </form>
-          <div class="col-1 submit-button pro-button">
-            <a href="">
-              <button type="submit" class="btn btn-primary">Gửi</button>
-            </a>
-          </div>
-          <div class="pro-button cancel-button col-1">
-            <a href="../../index.html">
-              <button type="button" class="btn btn-danger">Hủy</button>
-            </a>
-          </div>
 
-        </div>
+              <!-- Side widgets-->
+              <div class="col-lg-6 side-col">
+                  <!-- Search widget-->
+                  <div class="card mb-4">
+                      <div class="card-header"> Nhận xét </div>
+                        <div class="pro-button col-12">
+                          <textarea spellcheck="false" class="form-control"  rows="15"> </textarea>
+                      </div>
+                  </div>
+                  <!-- Categories widget-->
+                  <div class="card mb-4">
+                      <div class="card-header">Categories</div>
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="col-sm-6">
+                                  <ul class="list-unstyled mb-0">
+                                      <li><a href="#!">Web Design</a></li>
+                                      <li><a href="#!">HTML</a></li>
+                                      <li><a href="#!">Freebies</a></li>
+                                  </ul>
+                              </div>
+                              <div class="col-sm-6">
+                                  <ul class="list-unstyled mb-0">
+                                      <li><a href="#!">JavaScript</a></li>
+                                      <li><a href="#!">CSS</a></li>
+                                      <li><a href="#!">Tutorials</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Side widget-->
+                  <div class="card mb-4">
+                      <div class="card-header">Side Widget</div>
+                      <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
       </div>
     </div>
   </div>
+  <!-- content-wrapper ends -->
+  <!-- partial:../../partials/_footer.html -->
+  <!-- <footer class="footer">
+    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+      <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+      <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+    </div>
+  </footer> -->
+  <!-- partial -->
 </div>
         <!-- main-panel ends -->
       </div>

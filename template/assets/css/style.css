@@ -15518,27 +15518,27 @@ input:focus {
 
 /* Fonts */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  src: url("../fonts/Rubik/Rubik-Light.ttf");
+  src: url("../fonts/Poppins/Poppins-Light.ttf");
   /* IE9 Compat Modes */ }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  src: url("../fonts/Rubik/Rubik-Regular.ttf");
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
   /* IE9 Compat Modes */ }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  src: url("../fonts/Rubik/Rubik-Medium.ttf");
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
   /* IE9 Compat Modes */ }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  src: url("../fonts/Rubik/Rubik-Bold.ttf");
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
   /* IE9 Compat Modes */ }
 
 /* Backgrounds  */
@@ -21148,7 +21148,7 @@ div.tagsinput {
 
 .cancel-button{
   position: absolute;
-  padding: 0 0 0px 90px;
+  padding: 0 0 0px 60px;
   bottom: 27.5px;
 }
 
@@ -21188,4 +21188,8 @@ div.tagsinput {
 .page-link{
   color: #ffffff;
   background-color: #212529;
+}
+
+.side-col{
+  padding-top: 95px;
 }

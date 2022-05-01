@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Category</title>
+    <title>Danh mục</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -15,8 +15,6 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <!-- CCEnd -->
 
-    <!-- inject:css -->
-    <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
@@ -36,11 +34,10 @@
               <div class="profile-pic">
                 <div class="count-indicator">
                   <img class="img-xs rounded-circle " src="../../assets/images/faces/face25.jpg" alt="">
-                  <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Le Hoang Son</h5>
-                  <span>Manager</span>
+                  <h5 class="mb-0 font-weight-normal">Lê Hoàng Sơn</h5>
+                  <span>Tổng biên tập</span>
                 </div>
               </div>
             </div>
@@ -48,14 +45,14 @@
 
           <!-- Task -->
           <li class="nav-item nav-category">
-            <span class="nav-link">Task</span>
+            <span class="nav-link">Tác vụ</span>
           </li>
           <li class="nav-item menu-items">
             <a class="nav-link" href="../../index.html">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
-              <span class="menu-title">Posts</span>
+              <span class="menu-title">Bài viết</span>
             </a>
           </li>
           <li class="nav-item menu-items">
@@ -63,7 +60,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-account"></i>
               </span>
-              <span class="menu-title">User</span>
+              <span class="menu-title">Thành viên</span>
             </a>
           </li>
           <li class="nav-item menu-items">
@@ -71,7 +68,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
               </span>
-              <span class="menu-title">Category</span>
+              <span class="menu-title">Danh mục</span>
             </a>
           </li>
         </ul>
@@ -103,40 +100,36 @@
                 </ul>
 
             <ul class="navbar-nav navbar-nav-right">
-              <li class="nav-item dropdown d-none d-lg-block">
-                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown"href="../forms/post.html">+ Create New Project</a>
-              </li>
-
               <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                   <div class="navbar-profile">
                     <img class="img-xs rounded-circle" src="../../assets/images/faces/face25.jpg" alt="">
-                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Le Hoang Son</p>
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Lê Hoàng Sơn</p>
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                  <h6 class="p-3 mb-0">Profile</h6>
+                  <h6 class="p-3 mb-0">Trang cá nhân</h6>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
+                  <a class="dropdown-item preview-item" href="../forms/profile.html">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-settings text-success"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="preview-subject mb-1">Cài đặt</p>
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
+                  <a class="dropdown-item preview-item" href="../Login/login.html">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Log out</p>
+                      <p class="preview-subject mb-1">Đăng xuất</p>
                     </div>
                   </a>
                 </div>
@@ -148,188 +141,189 @@
           </div>
         </nav>
 
-        <!-- bài viết đang được duyệt -->
-        <div class="main-panel">
-          <div class="content-wrapper">
-            <div class="page-header">
+<!-- Main -->
+<div class="main-panel">
+  <div class="content-wrapper">
+    <div class="page-header">
+    </div>
+    <div class="row">
+      <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+
+            <!-- button new cate -->
+            <div class="card-title nav-item dropdown d-flex justify-content-between">
+            <h4> Danh mục </h4>
+            <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown"href="../template/pages/forms/post.html">+ Thêm danh mục mới</a>
             </div>
-            <div class="row">
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Category</h4>
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th> Name </th>
-                            <th> Created at </th>
-                            <th> Status </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <!-- <img src="assets/images/faces/face1.jpg" alt="image" /> -->
-                              <span class="pl-2">Son Hoang Le</span>
-                            </td>
-                            <td> Reporter </td>
-                            <td>
-                              <div class="badge badge-outline-success">Approved</div>
-                            </td>
 
-                            <td>
-                              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
-                              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
-                                <a href="#" class="dropdown-item preview-item" id="test-dropdown">
-                                  <div class="preview-thumbnail">
-                                    <div class="preview-icon">
-                                      <i class="mdi mdi-eye text-info"></i>
-                                    </div>
-                                  </div>
-                                  <div class="preview-item-content">
-                                    <p class="preview-subject ellipsis mb-1 text-small">Preview</p>
-                                  </div>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item preview-item" id="test-dropdown">
-                                  <div class="preview-thumbnail">
-                                    <div class="preview-icon">
-                                      <i class="mdi mdi-border-color text-info"></i>
-                                    </div>
-                                  </div>
-                                  <div class="preview-item-content">
-                                    <p class="preview-subject ellipsis mb-1 text-small">Edit</p>
-                                  </div>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item preview-item" id="test-dropdown">
-                                  <div class="preview-thumbnail">
-                                    <div class="preview-icon">
-                                      <i class="mdi mdi-delete text-success"></i>
-                                    </div>
-                                  </div>
-                                  <div class="preview-item-content">
-                                    <p class="preview-subject ellipsis mb-1 text-small">Delete</p>
-                                  </div>
-                                </a>
-                              </div>
-                              
-                            </td>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th> Tên </th>
+                    <th> Được tạo lúc </th>
+                    <th> Trạng thái </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <!-- <img src="assets/images/faces/face1.jpg" alt="image" /> -->
+                      <span class="pl-2">Sơn Hoàng L</span>
+                    </td>
+                    <td> 10pm </td>
+                    <td>
+                      <div class="badge badge-outline-success">Được duyệt</div>
+                    </td>
 
-                          </tr>
-                          <tr>
-                            <td>
-                              <!-- <img src="assets/images/faces/face2.jpg" alt="image" /> -->
-                              <span class="pl-2">Hoang Son Le</span>
-                            </td>
-                            <td> Reporter </td>
-                            <td> $14,500 </td>
-                            <td> 04 Dec 2019 </td>
-                            <td>
-                              <div class="badge badge-outline-warning">Pending</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <!-- <img src="assets/images/faces/face5.jpg" alt="image" /> -->
-                              <span class="pl-2">Lucy Abbott</span>
-                            </td>
-                            <td> 02312 </td>
-                            <td> $14,500 </td>
-                            <td> 04 Dec 2019 </td>
-                            <td>
-                              <div class="badge badge-outline-danger">Rejected</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <!-- <img src="assets/images/faces/face3.jpg" alt="image" /> -->
-                              <span class="pl-2">Peter Gill</span>
-                            </td>
-                            <td> 02312 </td>
-                            <td> $14,500 </td>
-                            <td> 04 Dec 2019 </td>
-                            <td>
-                              <div class="badge badge-outline-success">Approved</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <!-- <img src="assets/images/faces/face4.jpg" alt="image" /> -->
-                              <span class="pl-2">Sallie Reyes</span>
-                            </td>
-                            <td> 02312 </td>
-                            <td> $14,500 </td>
-                            <td> 04 Dec 2019 </td>
-                            <td>
-                              <div class="badge badge-outline-success">Approved</div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                    <!-- <div class="card-body">
-                    <h4 class="card-title"> Posts Under Review </h4>
-                    <div class="table-responsive">
-                      <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th>Members</th>
-                            <th>Service</th>
-                            <th>Title</th>
-                            <th></th>
-                            <th>Status</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        <div>
-                          <tr>
-                            <a class="nav-link" href= "pages/forms/blank.html">
-                                <td>Lan</td>
-                                <td>Photoshop</td>
-                                <td> rửa tay </td>
-                                <td>
-                                  <a href="../forms/blank-page.html">View</a>
-                                </td>
-                                <td><label class="badge badge-danger">Pending</label></td>
-                            </a>
-                          </tr>
-                        </div>
-                          <tr>
-                            <td>Messsy</td>
-                            <td>Flash</td>
-                            <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>
-                            <td><label class="badge badge-warning">In progress</label></td>
-                          </tr>
-                          <tr>
-                            <td>John</td>
-                            <td>Premier</td>
-                            <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>
-                            <td><label class="badge badge-info">Fixed</label></td>
-                          </tr>
-                          <tr>
-                            <td>Peter</td>
-                            <td>After effects</td>
-                            <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>
-                            <td><label class="badge badge-success">Completed</label></td>
-                          </tr>
-                          <tr>
-                            <td>Dave</td>
-                            <td>53275535</td>
-                            <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>
-                            <td><label class="badge badge-warning">In progress</label></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div> -->
-              </div>
+                    <td>
+                      <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+                      <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                        <a href="#" class="dropdown-item preview-item" id="test-dropdown">
+                          <div class="preview-thumbnail">
+                            <div class="preview-icon">
+                              <i class="mdi mdi-eye text-info"></i>
+                            </div>
+                          </div>
+                          <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1 text-small">Xem trước</p>
+                          </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item preview-item" id="test-dropdown">
+                          <div class="preview-thumbnail">
+                            <div class="preview-icon">
+                              <i class="mdi mdi-border-color text-info"></i>
+                            </div>
+                          </div>
+                          <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1 text-small">Chỉnh sửa</p>
+                          </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item preview-item" id="test-dropdown">
+                          <div class="preview-thumbnail">
+                            <div class="preview-icon">
+                              <i class="mdi mdi-delete text-success"></i>
+                            </div>
+                          </div>
+                          <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1 text-small">Xóa</p>
+                          </div>
+                        </a>
+                      </div>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- <img src="assets/images/faces/face2.jpg" alt="image" /> -->
+                      <span class="pl-2">Hoàng Sơn Lê</span>
+                    </td>
+                    <td> 08pm </td>
+                    <td>
+                      <div class="badge badge-outline-warning">Chờ duyệt</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- <img src="assets/images/faces/face5.jpg" alt="image" /> -->
+                      <span class="pl-2">Hoàng Lê Sơn</span>
+                    </td>
+                    <td> 07pm </td>
+                    <td>
+                      <div class="badge badge-outline-danger">Không duyệt</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- <img src="assets/images/faces/face3.jpg" alt="image" /> -->
+                      <span class="pl-2">Peter Gill</span>
+                    </td>
+                    <td> 02312 </td>
+                    <td> $14,500 </td>
+                    <td> 04 Dec 2019 </td>
+                    <td>
+                      <div class="badge badge-outline-success">Approved</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- <img src="assets/images/faces/face4.jpg" alt="image" /> -->
+                      <span class="pl-2">Sallie Reyes</span>
+                    </td>
+                    <td> 02312 </td>
+                    <td> $14,500 </td>
+                    <td> 04 Dec 2019 </td>
+                    <td>
+                      <div class="badge badge-outline-success">Approved</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
+            <!-- <div class="card-body">
+            <h4 class="card-title"> Posts Under Review </h4>
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Members</th>
+                    <th>Service</th>
+                    <th>Title</th>
+                    <th></th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <div>
+                  <tr>
+                    <a class="nav-link" href= "pages/forms/blank.html">
+                        <td>Lan</td>
+                        <td>Photoshop</td>
+                        <td> rửa tay </td>
+                        <td>
+                          <a href="../forms/blank-page.html">View</a>
+                        </td>
+                        <td><label class="badge badge-danger">Pending</label></td>
+                    </a>
+                  </tr>
+                </div>
+                  <tr>
+                    <td>Messsy</td>
+                    <td>Flash</td>
+                    <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>
+                    <td><label class="badge badge-warning">In progress</label></td>
+                  </tr>
+                  <tr>
+                    <td>John</td>
+                    <td>Premier</td>
+                    <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>
+                    <td><label class="badge badge-info">Fixed</label></td>
+                  </tr>
+                  <tr>
+                    <td>Peter</td>
+                    <td>After effects</td>
+                    <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>
+                    <td><label class="badge badge-success">Completed</label></td>
+                  </tr>
+                  <tr>
+                    <td>Dave</td>
+                    <td>53275535</td>
+                    <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>
+                    <td><label class="badge badge-warning">In progress</label></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
     <!-- container-scroller -->
