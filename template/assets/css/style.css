@@ -13171,6 +13171,7 @@ button.bg-dark:focus {
   flex-grow: 1 !important; }
 
 .flex-shrink-0 {
+  padding-right: 20px;
   flex-shrink: 0 !important; }
 
 .flex-shrink-1 {
@@ -21148,12 +21149,12 @@ div.tagsinput {
 
 .cancel-button{
   position: absolute;
-  padding: 0 0 0px 60px;
+  padding: 0 0 0px 75px;
   bottom: 27.5px;
 }
 
 .submit-button{
-  padding-left: 0px;
+  padding-left: 12px;
 }
 
 .img-fluid{
@@ -21192,4 +21193,8 @@ div.tagsinput {
 
 .side-col{
   padding-top: 95px;
+}
+
+.card-comments{
+  padding-left: 0px;
 }

@@ -181,39 +181,49 @@
 
               <!-- Side widgets-->
               <div class="col-lg-6 side-col">
-                  <!-- Search widget-->
                   <div class="card mb-4">
-                      <div class="card-header"> Nhận xét </div>
                         <div class="pro-button col-12">
-                          <textarea spellcheck="false" class="form-control"  rows="15"> </textarea>
+                          <form class="row g-3">
+                            <div class="pro-button col-md-12">
+                              <label for="exampleSelectCategories">Danh mục</label>
+                              <select class="form-control" id="exampleSelectCategories">
+                                <option>Được duyệt</option>
+                                <option>Chờ duyệt</option>
+                                <option>Không duyệt</option>
+                              </select>
+                            </div>
+                            <div class="pro-button col-12">
+                              <label for="exampleTextarea1">Nhận xét</label>
+                              <textarea spellcheck="false" class="form-control" id="exampleTextarea1" rows="4"> </textarea>
+                            </div>
+                
+                            <div class="col-2 submit-button pro-button">
+                              <button type="submit" class="btn btn-primary">Gửi</button>
+                            </div>
+                            
+                          </form>
+                          
+                          <div class="card-body card-comments">
+                            <!-- Comment with nested comments-->
+                            <div class="d-flex mb-4">
+                                <!-- Parent comment-->
+                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">Commenter Name</div>
+                                    If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
+                                </div>
+                            </div>
+                            <!-- Single comment-->
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">Commenter Name</div>
+                                    When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
+                                </div>
+                            </div>
+                        </div>
+
                       </div>
-                  </div>
-                  <!-- Categories widget-->
-                  <div class="card mb-4">
-                      <div class="card-header">Categories</div>
-                      <div class="card-body">
-                          <div class="row">
-                              <div class="col-sm-6">
-                                  <ul class="list-unstyled mb-0">
-                                      <li><a href="#!">Web Design</a></li>
-                                      <li><a href="#!">HTML</a></li>
-                                      <li><a href="#!">Freebies</a></li>
-                                  </ul>
-                              </div>
-                              <div class="col-sm-6">
-                                  <ul class="list-unstyled mb-0">
-                                      <li><a href="#!">JavaScript</a></li>
-                                      <li><a href="#!">CSS</a></li>
-                                      <li><a href="#!">Tutorials</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- Side widget-->
-                  <div class="card mb-4">
-                      <div class="card-header">Side Widget</div>
-                      <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
                   </div>
               </div>
           </div>
