@@ -21198,3 +21198,19 @@ div.tagsinput {
 .card-comments{
   padding-left: 0px;
 }
+
+.af-bg{
+  background-color: #f8f9fa;
+}
+
+.af-bg-in{
+  border-radius: 1rem;
+  background-color: #ffffff;
+  color:#000000;
+}
+
+.af-bg-out{
+  background-color: #ffffff;
+  color:#000000;
+  border: none;
+}
