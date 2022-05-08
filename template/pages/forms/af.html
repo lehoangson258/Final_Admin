@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title> Document </title> 
+</head>
+<body>
+    <div class="container">
+        <h1> Giải đáp thắc mắc </h1>
+
+        <div class="form first">
+            <div class="details personal">
+                <p class="title"> Nếu quý vị có thắc mắc vấn đề liên quan đến Covid-19 vui lòng điền thông tin và câu hỏi dưới đây. </p>
+
+                <div class="fields">
+                    <div class="input-field">
+                        <h3> Họ và tên </h3>
+                        <p class="alo"> alo </p>
+                    </div>
+
+                    <div class="input-field">
+                        <h3> Địa chỉ Email </h3>
+                        <p> alo </p>
+                    </div>
+
+                    <div class="input-field">
+                        <h3> Câu hỏi </h3>
+                        <p> alo </p>
+                    </div>
+
+
+                </div>
+        </div>
+
+    </div>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 243, 243);
+}
+.container{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.alo{
+    margin-top: 10px;
+}
+
+.title{
+    margin-top: 10px;
+}
+
+.input-field{
+    margin-top: 20px;
+}
+
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+}
+    </style>
+    
+</body>
+</html>
